@@ -142,7 +142,7 @@ public class SmtpClient implements ISmtpClient{
         out.write(cmd);
         out.write("\r\n"); //Les retours à la ligne dans le serveur
         out.flush();
-        System.err.println("erreur");
+      
         int returnCode = readServerResponse(in);
 
         if (returnCode/100 != okCode) {

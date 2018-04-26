@@ -80,6 +80,7 @@ public class Message {
         return realName;
     }
 
+    @Override
     public String toString(){
         StringBuffer buffer = new StringBuffer();
 

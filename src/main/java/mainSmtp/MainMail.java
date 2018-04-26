@@ -42,7 +42,7 @@ public class MainMail {
         SmtpClient smtp = new SmtpClient();
         try {
             for (Prank p : pranks) {
-                System.err.println("Error while sending: ");
+               
                 smtp.sendMessage(serverName, serverPort, p);
             }
         } catch (Exception e) {
